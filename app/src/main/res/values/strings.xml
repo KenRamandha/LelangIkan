@@ -1,0 +1,245 @@
+<resources>
+    <string name="app_name" translatable="false">E-Lelang Ikan</string>
+    <string name="title_activity_welcome" translatable="false">Home Screen</string>
+    <string name="next" translatable="false">NEXT</string>
+    <string name="skip" translatable="false">SKIP</string>
+    <string name="start" translatable="false">GOT IT</string>
+
+    <string name="hasil_pembayaranpanitia">Pembayaran Panitia</string>
+    <string name="PenilaianLelang">Testimoni</string>
+    <string name="LihatPenilaian">Lihat Testimoni</string>
+
+    <string name="must_be_filled">Wajib Diisi</string>
+
+    <string-array name="stst_Usaha">
+        <item>Perorangan</item>
+        <item>Perusahaan</item>
+        <item>Koperasi</item>
+    </string-array>
+
+    <string-array name="sts_transaksi">
+        <item>Sedang Diproses</item>
+        <item>Sedang Dikirim</item>
+        <item>Barang Telah Sampai</item>
+    </string-array>
+
+    <string name="tab_ProsesPengiriman">Diproses</string>
+
+    <string name="tab_penilaian">Penilaian</string>
+
+    <string name="title_activity_nav_bar" translatable="false">nav_bar</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_lelang" translatable="false">Lelang</string>
+    <string name="title_riwayat" translatable="false">Riwayat</string>
+    <string name="title_akun" translatable="false">Akun</string>
+    <string name="title_penawaran" translatable="false">Penawaran</string>
+    <string name="title_scan" translatable="false">Scan</string>
+    <string name="title_activity_pelelang" translatable="false">PelelangActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_riwayat_semua">Semua</string>
+    <string name="tab_riwayat_sukses">Sukses</string>
+    <string name="tab_riwayat_gagal">Gagal</string>
+
+    <string name="tab_peraturan">Peraturan</string>
+    <string name="tab_riwayat">Riwayat Bid</string>
+    <string name="tab_testimoni">Testimoni</string>
+
+    <string name="tab_riwayat1">Riwayat Bid</string>
+
+    <string name="tab_pembukaan">Pembukaan</string>
+    <string name="tab_penawaran">Penawaran</string>
+
+    <string name="tab_list">List</string>
+    <string name="tab_terverifikasi">Terverifikasi</string>
+
+    <string name="tab_request">Request</string>
+    <string name="tab_selesai">Selesai</string>
+
+    <string name="tab_pengemasan">Pengemasan</string>
+    <string name="tab_pengiriman">Pengiriman</string>
+    <string name="tab_terkirim">Terkirim</string>
+
+    <string name="tab_pelelang">Pelelang</string>
+    <string name="tab_peserta">Peserta</string>
+    <string name="tab_panitia">Panitia</string>
+
+    <string name="tab_deposit">Deposit</string>
+    <string name="tab_pemenang">Pemenang</string>
+
+    <string name="tab_pembayaran_peserta">Pembayaran</string>
+    <string name="tab_riwayat_peserta">Riwayat</string>
+
+    <string name="spinner_title">Pilih Pengguna</string>
+    <string name="btn_daftar">Daftar</string>
+    <string name="Enter_Name">Masukkan Nama Lengkap</string>
+    <string name="Enter_username">Masukkan Username</string>
+    <string name="Enter_Email">Masukkan alamat Email</string>
+    <string name="Enter_pass">Masukkan Password</string>
+    <string name="Enter_hp">Masukkan No.Hp/Ponsel</string>
+    <string name="punyaAkun">Sudah punya akun?</string>
+    <string name="blmpunyaAkun">Belum punya akun?</string>
+    <string name="spinner_title_gender">Pilih Jenis Kelamin</string>
+    <string name="spinner_title_pelelang">Pilih Jenis Pelelang</string>
+
+    <string name="salam_malam">Selamat Malam</string>
+    <string name="salam_pagi">Selamat Pagi</string>
+    <string name="salam_siang">Selamat Siang</string>
+    <string name="salam_sore">Selamat Sore</string>
+
+    <string name="User">%1$s!</string>
+    <string name="addLelang">+ Tambah Lelang</string>
+
+    <string name="tab_Semua">Semua</string>
+    <string name="tab_Terkirim">Terkirim</string>
+    <string name="tab_Pengiriman">Pengiriman</string>
+    <string name="Belum_Punya_Akun">Belum Punya Akun?</string>
+    <string name="Daftar_akun">Daftar Akun</string>
+    <string name="Masuk">Masuk</string>
+    <string name="Login">Login</string>
+    <string name="Daftar">Daftar</string>
+    <string name="saya_setuju_dengan">Saya setuju dengan</string>
+    <string name="syarat_dan_ketentuan">syarat dan ketentuan</string>
+    <string name="sukses">sukses</string>
+    <string name="Back">Kembali</string>
+    <string name="foto_profil">Foto Profil</string>
+    <string name="Search">Cari Lelang …</string>
+    <string name="DialogTerkirim">Pesanan Berhasil Terkirim</string>
+    <string name="sedang_dalam_pengiriman">Sedang Dalam Pengiriman</string>
+    <string name="pemesan">Pemesan</string>
+    <string name="alamat">Alamat</string>
+    <string name="no_hp">No Hp</string>
+    <string name="Pesanan">Pesanan</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="NmPengirim">Nama Pengirim</string>
+    <string name="tglMulaiLelang">Tanggal Mulai</string>
+    <string name="Nm_Pemesan">Budi Utomo</string>
+    <string name="AlamatKirim">Jl. Legian No.3, Bali</string>
+    <string name="JenisPesanna">Ikan Bawal</string>
+    <string name="HargaToTAL">1.150.000</string>
+    <string name="hPnO">081234567892</string>
+    <string name="DateTime">12/08/22 – 16:45</string>
+    <string name="nm_pengirim">Tutu</string>
+    <string name="profile">Profile</string>
+    <string name="Ganti_PP">Ganti Foto Profile</string>
+    <string name="NamaEditAkun">Nama</string>
+    <string name="titik2">:</string>
+    <string name="JenisKelamin">Jenis Kelamin</string>
+    <string name="Perempuan">Perempuan</string>
+    <string name="Provinsi">Provinsi</string>
+    <string name="AlamatEdit">Jl Imam Bonjol, Semarang Jawa Tengah</string>
+    <string name="AlamatProvinsi">Jawa Tengah</string>
+    <string name="Telepon">No Telp/Hp</string>
+    <string name="nm_Telp">+62811290111</string>
+    <string name="Email">Email</string>
+    <string name="AlamatEmail">1121900678@gmail.com</string>
+    <string name="NIKEdit">NIK</string>
+    <string name="nomornik">123453675486590</string>
+    <string name="SIUP">SIUP</string>
+    <string name="singktnsiup">(Surat Izin Usaha Perdagangan)</string>
+    <string name="TambahFoto">+ Tambah Foto</string>
+    <string name="File">Surat.jpg</string>
+    <string name="EditAkunPelelang">Edit foto, nama, alamat, dan email</string>
+    <string name="EditProf">Edit Profile</string>
+    <string name="tarik_saldo">Tarik Saldo</string>
+    <string name="tarik_saldo_pendapatan">Tarik saldo pendapatan</string>
+    <string name="btn_Out">Keluar</string>
+    <string name="saldo_deposit">Saldo Deposit</string>
+    <string name="NominalDompet">Rp. 91.000.000</string>
+    <string name="AlamatProfile">Kendal, Jawa Tengah</string>
+    <string name="my_profile">My Profile</string>
+    <string name="pengiriman">Pengiriman</string>
+    <string name="SaveData">Simpan</string>
+    <string name="nma_Ikan">Iwak Cupang</string>
+    <string name="BeratIkan">100 Kg</string>
+    <string name="Jumlah">Jumlah Produk</string>
+    <string name="Penawaran">Mulai Penawaran</string>
+    <string name="HargPenawaran">Rp. 10.000</string>
+    <string name="LamaLelang">1 Hari 2 Jam</string>
+    <string name="WktuLelang">Waktu Lelang</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="example">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="noPlat">AA 23234 T</string>
+    <string name="no_pLAT">No Plat Pengirim</string>
+    <string name="Petani_Ikan">Yeremia</string>
+    <string name="Date">16/8/21</string>
+    <string name="Time">16:45</string>
+    <string name="Kirim_Pesanan">Kirim</string>
+    <string name="Selesai">Selesai</string>
+    <string name="DetailPesanan">Detail Pesanan</string>
+    <string name="iwakBelut">Ikan Belut Menopterus</string>
+    <string name="jumlh_psanan">Jumlah Pesanan</string>
+    <string name="alamat_pengiriman">Alamat Pengiriman</string>
+    <string name="nma_alamat">Budi Utomo ( 089888768787 )</string>
+    <string name="Estimasi">Estimasi tiba 18 – 19 Aug</string>
+    <string name="Regular">Regular ( 12.000 )</string>
+    <string name="kirim_psananPelelang">Kirim Pesanan</string>
+    <string name="DetailPengiriman">Detail Pengiriman</string>
+    <string name="msukkannmapengirim">Masukkan Nama Pengirim</string>
+    <string name="Enter_nma_pengirim">Masukkan Nama Pengirim</string>
+    <string name="masuknnoHp">Masukkan No HandPhone</string>
+    <string name="Enter_noHp_pengirim">Masukkan No HandPhone/Hp</string>
+    <string name="msuknPlatPengirim">Masukkan No Plat Pengirim</string>
+    <string name="Enter_noPlat_pengirim">Masukkan No Plat</string>
+    <string name="konfirmasiPengiriman">Konfirmasi</string>
+    <string name="dialog_detail">Informasi Detail Pengirim Sukses</string>
+    <string name="menu">Menu</string>
+    <string name="EditLelang">Edit</string>
+    <string name="HapusDLelang">Hapus</string>
+    <string name="BliSkrng">Beli Sekarang</string>
+    <string name="TglLelangg">2022–08–27 11:46:00</string>
+    <string name="CameraAdd">Kamera</string>
+    <string name="ambil_foto">Ambil Foto</string>
+    <string name="nmeproduk">Nama Produk</string>
+
+    <string name="DeskProduk">Deskripsi Produk</string>
+    <string name="HrgMinimAccept">Harga Minimal Diterima</string>
+    <string name="tglEndLelang">Tanggal Selesai</string>
+    <string name="HrgIncrement">Harga Kelipatan Awal</string>
+    <string name="tglLelang">Tanggal lelang</string>
+    <string name="img1">Gambar 1</string>
+    <string name="img2">Gambar 2</string>
+    <string name="img3">Gambar 3</string>
+    <string name="img4">Gambar 4</string>
+
+    <string name="coba">coba coba</string>
+
+    <string name="msuknNmaKendaraan">Nama Kendaraan</string>
+    <string name="Enter_Nma_Kndraan">Masukkan Nama Kendaraan</string>
+    <string name="msuknsttsPengiriman">Status Pengiriman</string>
+    <string name="Hsilpmbyran">Hasil Pembayaran</string>
+    <string name="detailHsilpmbyrn">Detail Bukti Hasil Pembayaran Lelang</string>
+    <string name="Search_tgl">Cari Id Produk...</string>
+
+    <string name="Enter_Nik">Masukkan NIK</string>
+    <string name="Enter_Npwp">Masukkan NPWP</string>
+    <string name="Enter_Alamat">Masukkan Alamat</string>
+
+
+    ================================== Integer/String Array
+    ===============================================
+    <string-array name="data_NmaIkan">
+        <item> Iwak Bawal </item>
+        <item> Iwak Lele </item>
+    </string-array>
+
+    <string-array name="data_NmaPtani">
+        <item> Yeremia Nelayan </item>
+        <item> Itazura</item>
+    </string-array>
+
+    <string-array name="data_TotalHarga">
+        <item> Total Harga </item>
+    </string-array>
+
+    <string-array name="Harga_ItmPsnan">
+        <item> Rp. 200.000 </item>
+    </string-array>
+
+    <integer-array name="data_imgPsnanPlelang">
+        <item>@drawable/ikan</item>
+    </integer-array>
+</resources>

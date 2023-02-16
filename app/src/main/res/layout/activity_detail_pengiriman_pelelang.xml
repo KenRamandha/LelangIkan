@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pelelang.hostui.DetailPengirimanPelelang">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DetailPengiriman"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/back_green"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_goneMarginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Pengiriman Id : "
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvPengirimanId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleName"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleName"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleName"
+        android:gravity="end"
+        tools:text="Ahmad farouq an najaby"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleName"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleStartShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        android:layout_marginTop="8dp"
+        android:text="Lelang Id : "
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvLelangId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="@id/tvTitleStartShift"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleStartShift"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleStartShift"
+        android:gravity="end"
+        tools:text="Guest"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleStartShift"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleEndShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        android:layout_marginTop="8dp"
+        android:text="Pelelang Id : "
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvPelelangId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="@id/tvTitleEndShift"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleEndShift"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleEndShift"
+        android:gravity="end"
+        tools:text="Laki - Laki"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view14"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleEndShift"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleResi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nama Pengirim : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view14"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvNamaPengirim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="@id/tvTitleResi"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleResi"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitleResi"
+        android:gravity="end"
+        tools:text="RAW098764"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleResi"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitlePengembalian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        android:layout_marginTop="8dp"
+        android:text="Nomor Polisi : "
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvNomorPolisi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintTop_toTopOf="@id/tvTitlePengembalian"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitlePengembalian"
+        app:layout_constraintStart_toEndOf="@+id/tvTitlePengembalian"
+        android:gravity="end"
+        tools:text="olsera@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitlePengembalian"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleHopeCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        android:layout_marginTop="8dp"
+        android:text="Nama Kendaraan : "
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvNamaKendaraan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleHopeCash"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleHopeCash"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleHopeCash"
+        android:gravity="end"
+        android:layout_marginHorizontal="16dp"
+        tools:text="olsera@gmail.com"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleHopeCash"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleCashActual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Nomor Handphone : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvNomorHp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleCashActual"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleCashActual"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleCashActual"
+        android:gravity="end"
+        android:layout_marginHorizontal="16dp"
+        tools:text="01 Januari 2012"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleCashActual"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleDifferentCash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status Transaksi : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvStatusTransaksi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleDifferentCash"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleDifferentCash"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleDifferentCash"
+        android:gravity="end"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleDifferentCash"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTitleTotalHope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Pengiriman : "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view7"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvTanggalPengiriman"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvTitleTotalHope"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitleTotalHope"
+        app:layout_constraintStart_toEndOf="@+id/tvTitleTotalHope"
+        android:gravity="end"
+        android:layout_marginHorizontal="16dp"
+        tools:text=""
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleTotalHope"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

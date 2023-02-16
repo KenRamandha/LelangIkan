@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDetailTransaksi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="4dp">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/noInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LL-2022-00001"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/nmPemesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Panjul"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:gravity="end"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/subtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Rp. 100.000"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <Button
+                android:id="@+id/btnUnduh"
+                app:icon="@drawable/ic_baseline_remove_red_eye_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surat Perintah"
+                android:textSize="10dp"/>
+            <Button
+                android:id="@+id/btnProsesTransaksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Proses Transaksi"
+                android:textSize="10dp"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

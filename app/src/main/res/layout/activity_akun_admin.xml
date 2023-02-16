@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/ib_back_akun_admin"
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@color/transparant"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PROFILE ADMIN"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+
+        <!--        NAMA-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:orientation="vertical">
+
+            <!--            ID Admin-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="ID Admin"
+                    android:fontFamily="@font/cabin_medium"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <TextView
+                    style="@style/PoppinsMediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/titik2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_userid_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparant"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/abu_abu"/>
+            <!--            END ID ADMIN-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:fontFamily="@font/cabin_medium"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <TextView
+                    style="@style/PoppinsMediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/titik2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_nama_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparant"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <!--            END NAMA-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/abu_abu"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+
+
+
+            <!--            USERNAME-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:fontFamily="@font/cabin_medium"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <TextView
+                    style="@style/PoppinsMediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/titik2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_username_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparant"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/abu_abu"/>
+
+            <!--                END USERNAME-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+
+            <!--            NO TELP-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="No.Telp"
+                    android:fontFamily="@font/cabin_medium"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+                <TextView
+                    style="@style/PoppinsMediumFont"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/titik2"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_telp_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparant"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/abu_abu"/>
+            <!--            END NO TELP-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

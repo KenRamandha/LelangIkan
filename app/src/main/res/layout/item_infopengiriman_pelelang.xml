@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemenang Lelang"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/tvInfoPenjual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yere Fisher"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lelang"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/tvInfoTglOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11 September 2022"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pengirim"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/tvInfoNamaPengirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Akbar"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. Handphone"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/tvInfoNoHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="087623456767"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plat Nomor"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/tvInfoPlatNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AA 8892 BG"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="3dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pengiriman"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <TextView
+            android:id="@+id/tvInfoTglPengiriman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="13 September 2022"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>

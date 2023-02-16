@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_buat_lelang"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Detail Lelang"
+                    android:textColor="@color/green"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_foto_lelang"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:src="@drawable/imgup"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/iv_foto_lelang2"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/nma_Ikan"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toEndOf="@+id/iv_foto_lelang"
+                        app:layout_constraintTop_toTopOf="@+id/iv_foto_lelang"
+                        app:srcCompat="@drawable/imgup" />
+
+                    <ImageView
+                        android:id="@+id/iv_foto_lelang3"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/nma_Ikan"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toEndOf="@+id/iv_foto_lelang2"
+                        app:layout_constraintTop_toTopOf="@+id/iv_foto_lelang2"
+                        app:srcCompat="@drawable/imgup" />
+
+                    <ImageView
+                        android:id="@+id/iv_foto_lelang4"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:layout_marginStart="8dp"
+                        android:contentDescription="@string/nma_Ikan"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toEndOf="@+id/iv_foto_lelang3"
+                        app:layout_constraintTop_toTopOf="@+id/iv_foto_lelang3"
+                        app:srcCompat="@drawable/imgup" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmeproduk"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/NamaProdukPelelang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DeskProduk"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/DeskProduk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Jumlah"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/JumlahBeratIkan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Penawaran"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/MulaiPenawaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/HrgMinimAccept"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hrgaMinimAccept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/HrgIncrement"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/hrgaIncremental"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BliSkrng"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/BeliSkrng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tglMulaiLelang"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/TglMulaiLelang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tglEndLelang"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/TglEndLelang"
+                        style="@style/EditTextAkun"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@color/transparant"
+                        android:gravity="top"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/keterangan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang">
+
+                    <TextView
+                        android:id="@+id/Ket_Lelang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@color/transparant"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/edit_lelang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_button_green"
+                        android:text="Edit Data"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/delete_lelang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_button_green"
+                        android:text="Hapus data"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

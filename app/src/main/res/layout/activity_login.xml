@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".intro.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="243dp"
+            android:layout_height="142dp"
+            android:src="@drawable/logo_new"
+            android:layout_marginStart="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:paddingLeft="15dp"
+                android:text="Login to"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:padding="4dp"
+                android:text="Continue"
+                android:textColor="@color/kuning"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_regular"
+                android:paddingLeft="15dp"
+                android:paddingRight="100dp"
+                android:paddingTop="10dp"
+                android:text="Selamat Datang di Aplikasi Lelang Ikan Silahkan Masukkan akun anda..."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="0dp"
+                    android:src="@drawable/ic_baseline_people_24" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/abu"
+                    app:boxStrokeColor="@color/kuning"
+                    style="@style/Widget.AppTheme.TextInputLayoutList">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Username"
+                        android:inputType="textEmailAddress"
+                        android:paddingStart="10dp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingRight="0dp"
+                    android:src="@drawable/ic_baseline_lock_24" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    android:background="@color/abu"
+                    app:boxStrokeColor="@color/kuning"
+                    style="@style/Widget.AppTheme.TextInputLayoutList">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingStart="10dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_manage_accounts_24"/>
+                <Spinner
+                    android:id="@+id/spinnerPeran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:prompt="@string/spinner_title"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/card_peran_login"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/box_login"
+                android:layout_width="40sp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin_bold"
+                    android:text="Ingat Saya"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center_vertical">-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/lupa_password"-->
+<!--                    style="?android:attr/borderlessButtonStyle"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:fontFamily="@font/cabin_bold"-->
+<!--                    android:text="Lupa Password?"-->
+<!--                    android:textAlignment="textEnd"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:textColor="@color/kuning"-->
+<!--                    android:textSize="13sp" />-->
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/masuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/kuning"
+            android:fontFamily="@font/cabin_bold"
+            android:padding="10dp"
+            android:text="Masuk"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin_regular"
+                    android:text="Belum Punya Akun?"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:id="@+id/daftar_login"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/cabin_regular"
+                    android:padding="4dp"
+                    android:text="Daftar Akun"
+                    android:textAllCaps="false"
+                    android:textColor="@color/kuning"
+                    android:textSize="16sp"
+                    android:textAlignment="textStart"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

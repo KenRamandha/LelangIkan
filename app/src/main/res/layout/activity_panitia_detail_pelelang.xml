@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_back_detail_pelelang_panitia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparant"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Detail Pelelang"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Nama"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nama_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yeremia S"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Jenis Usaha"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_jenis_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Provinsi"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_provinsi_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jawa Tengah"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Kota"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_kota_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kendal"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Kecamatan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_kecamatan_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kendal"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Alamat"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_alamat_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Kendal 1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Telp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_telp_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0818238123841"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_email_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="peserta1@gmail.com"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="No. NPWP"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_npwp_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234565757"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="No. NIK"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nik_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234565757"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Bank"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_bank_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="bank"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="No. Rekening"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_norek_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234565757"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Deskripsi"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_deskripsi_detail_pelelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="deskripsi"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Dokumen"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20sp"
+                android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File NPWP"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/iv_npwp_detail_pelelang_panitia"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/abu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File KTP"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:id="@+id/iv_ktp_detail_pelelang_panitia"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/abu"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File SIUP"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"/>
+                <ImageView
+                    android:id="@+id/iv_siup_detail_pelelang_panitia"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/abu"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_tolak_detail_pelelang_panitia"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"
+                    android:text="Tolak"
+                    android:textAllCaps="false"/>
+                <Button
+                    android:id="@+id/btn_verif_detail_pelelang_panitia"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white"
+                    android:text="Verifikasi"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+</LinearLayout>

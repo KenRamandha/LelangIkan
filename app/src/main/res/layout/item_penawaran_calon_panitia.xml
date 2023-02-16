@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_nama_penawaran_calon_panitia"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Peserta satu"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/iv_penawaran_calon_panitia"
+            android:layout_width="18dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/account_eye"
+            android:background="@color/transparant"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/ln_detail_peserta_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_harga_penawaran_calon_panitia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Rp.1000000"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

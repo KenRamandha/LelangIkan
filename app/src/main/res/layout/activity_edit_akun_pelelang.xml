@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pelelang.hostui.EditAkunPelelang">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/btn_back_editrpofilPelelang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparant"
+                    android:contentDescription="@string/profile"
+                    android:src="@drawable/ic_baseline_arrow_back_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextAkunPelelang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/profile" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="jenis Usaha"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <Spinner
+                            android:id="@+id/spinnerStatusUsaha"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:spinnerMode="dropdown"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Provinsi"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_provinsiPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="@string/AlamatProvinsi"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kota"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_kotaPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="@string/AlamatProvinsi"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kecamatan"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_kecamatanPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="@string/AlamatProvinsi"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kelurahan"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_kelurahanPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="@string/AlamatProvinsi"
+                            android:inputType="text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="No Rekening"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_noRekPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="@string/nomornik"
+                            android:inputType="number"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Bank"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_namaBankPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yang digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Atas Nama"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_atasNamaPelelang"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Atas Nama pemilik Rekening"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/edAlamat"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yg digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Telepon"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/edTelepon"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yg digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Email"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/edEmail"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yg digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="NPWP"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/edNpwp"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yg digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Username"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/edUsername"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yg digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="NIK"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvNik"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Nama Bank yg digunakan"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/containerSIUP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/PoppinsMediumFont"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/SIUP"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    style="@style/PoppinsRegulerFont"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/singktnsiup"
+                                    android:textColor="@color/black"
+                                    android:textSize="7sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/PoppinsRegulerFont"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="@string/titik2"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp">
+
+                                <Button
+                                    android:id="@+id/btn_galeri_fotoSIUP"
+                                    style="@style/buttontmbhFtot"
+                                    android:layout_width="93dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_corner_btn"
+                                    android:backgroundTint="@color/transparant"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/ambil_foto"
+                                    android:textAllCaps="false" />
+
+                                <Button
+                                    android:id="@+id/btn_camera_fotoSIUP"
+                                    style="@style/buttontmbhFtot"
+                                    android:layout_width="93dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_corner_btn"
+                                    android:backgroundTint="@color/transparant"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/CameraAdd"
+                                    android:textAllCaps="false"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgSIUP"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/imgup"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/PoppinsMediumFont"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="File KTP"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/PoppinsRegulerFont"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="@string/titik2"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp">
+
+                                <Button
+                                    android:id="@+id/btn_galeri_fotoKTP"
+                                    style="@style/buttontmbhFtot"
+                                    android:layout_width="93dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_corner_btn"
+                                    android:backgroundTint="@color/transparant"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/ambil_foto"
+                                    android:textAllCaps="false" />
+
+                                <Button
+                                    android:id="@+id/btn_camera_fotoKTP"
+                                    style="@style/buttontmbhFtot"
+                                    android:layout_width="93dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_corner_btn"
+                                    android:backgroundTint="@color/transparant"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/CameraAdd"
+                                    android:textAllCaps="false"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgKTP"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/imgup"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/containerNPWP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/PoppinsMediumFont"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="File NPWP"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    style="@style/PoppinsRegulerFont"
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="(Nomor Pokok Wajib Pajak)"
+                                    android:textColor="@color/black"
+                                    android:textSize="7sp" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/PoppinsRegulerFont"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:text="@string/titik2"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp">
+
+                                <Button
+                                    android:id="@+id/btn_galeri_fotoNPWP"
+                                    style="@style/buttontmbhFtot"
+                                    android:layout_width="93dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_corner_btn"
+                                    android:backgroundTint="@color/transparant"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/ambil_foto"
+                                    android:textAllCaps="false" />
+
+                                <Button
+                                    android:id="@+id/btn_camera_fotoNPWP"
+                                    style="@style/buttontmbhFtot"
+                                    android:layout_width="93dp"
+                                    android:layout_height="28dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_corner_btn"
+                                    android:backgroundTint="@color/transparant"
+                                    android:fontFamily="@font/poppins_regular"
+                                    android:text="@string/CameraAdd"
+                                    android:textAllCaps="false"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/imgNPWP"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/imgup"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/PoppinsMediumFont"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Deskripsi Usaha"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            style="@style/PoppinsRegulerFont"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:text="@string/titik2"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/ed_deskripsiusaha"
+                            style="@style/EditTextAkun"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/transparant"
+                            android:gravity="top"
+                            android:hint="Deskripsi usaha"
+                            android:inputType="text"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_simpanDataPelelang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_button_green"
+                    android:text="@string/SaveData"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+   <include
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/pb_loading"
+       layout="@layout/layout_loading"
+       android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

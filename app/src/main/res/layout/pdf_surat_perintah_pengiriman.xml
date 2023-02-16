@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="2480px"
+    android:layout_height="3508px"
+    android:orientation="vertical"
+    android:id="@+id/surat_perintah_pengiriman">
+
+    <LinearLayout
+        android:id="@+id/printttt"
+        android:layout_width="2480px"
+        android:layout_height="3508px"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_new" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SURAT PERINTAH PENGEMASAN DAN PENGIRIMAN"
+                android:textSize="12sp"
+                android:fontFamily="@font/timesbd"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jl. Imam Bonjol No.207, Kota Semarang, Jawa Tengah 50949, Indonesia"
+                android:textSize="10sp"
+                android:fontFamily="@font/timesbd"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telp.081234567890 - Email:lelangikan@gmail.com"
+                android:textSize="10sp"
+                android:fontFamily="@font/timesbd"
+                android:textColor="@color/black" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lampiran : 1 (Satu)"
+                android:fontFamily="@font/times"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perihal     : Surat Perintah Pengemasan Dan Pengiriman"
+                android:fontFamily="@font/times"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yth. Bpk/Ibu"
+                    android:fontFamily="@font/times"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/tv_pelelang_surat_pdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="Nama Pelelang"
+                    android:fontFamily="@font/times"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_kecamatan_surat_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecamatan"
+                android:fontFamily="@font/times"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_kota_surat_pdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota"
+                android:fontFamily="@font/times"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Dengan Hormat"
+                android:fontFamily="@font/times"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kami telah mengirim Surat Perintah Pengemasan dan Pengiriman ini bertujuan untuk segera mengemas dan mengirimkan Produk Lelang Ikan. yang anda buka sebelumnya sebagai Petani Ikan/Pelelang Ikan. Bersama ini kami kirimkan Surat Perintah Pengemasan dan Pengiriman dengan data sebagai berikut."
+                android:fontFamily="@font/times"
+                android:textSize="12sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/back_tabel_surat_green"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Lelang Id"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Nama Produk"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Jumlah Kg"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Peserta Tujuan"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Tanggal Menang Lelang"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Status Bayar"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/back_tabel_surat_white"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_lelangId_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Lelang Id"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="95dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_produk_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Nama Produk"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_jumlah_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Jumlah Kg"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white"
+                >
+                <TextView
+                    android:id="@+id/tv_peserta_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Peserta Tujuan"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white"
+                >
+                <TextView
+                    android:id="@+id/tv_tanggal_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Tanggal Menang Lelang"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white"
+                >
+                <TextView
+                    android:id="@+id/tv_status_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Status Bayar"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/back_tabel_surat_green"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Alamat Kirim"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Kelurahan Kririm"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Kecamatan Kririm"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Kota Kririm"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_green">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Provinsi Kririm"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/back_tabel_surat_green"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_alamat_kirim_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Alamat Kirim"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_kelurahan_kirim_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Kelurahan Kririm"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_kecamatan_kirim_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Kecamatan Kririm"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+
+                <TextView
+                    android:id="@+id/tv_kota_kirim_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Kota Kririm"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back_tabel_surat_white">
+                <TextView
+                    android:id="@+id/tv_provinsi_kirim_surat_pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Provinsi Kririm"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kami harap untuk mengirimkan produk lelang dengan segera dengan alamat tujuan yang sudah tertera."
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/times"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atas Perhatiann Saudara Kami Ucapkan Terimakasih."
+
+            android:fontFamily="@font/times"
+            android:textSize="12sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="40dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hormat Kami, "
+                    android:fontFamily="@font/times"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Staf E-Lelang"
+                    android:fontFamily="@font/times"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="60dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

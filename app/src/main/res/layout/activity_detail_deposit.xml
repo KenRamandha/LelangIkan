@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_back_detail_peserta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparant"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Detail Pembayaran Deposit"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Nama"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yeremia S"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Nominal Deposit"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10K"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cabin_medium"
+                        android:text="Tanggal Deposit"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_tgl_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20/01/2023"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/abu_abu" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bukti Transfer"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Foto"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+                <ImageView
+                    android:id="@+id/ivbukti_pembayaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/abu"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+</LinearLayout>

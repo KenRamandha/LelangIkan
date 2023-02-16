@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/green"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_peserta_pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peserta Satu"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:layout_margin="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Produk"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppins_medium"/>
+                <TextView
+                    android:id="@+id/tv_ikan_pembayaran"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ikan Lele 50kg"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hasil yang di dapat"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/poppins_medium"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp."
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/green"/>
+                    <TextView
+                        android:id="@+id/tv_hagra_pembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.000.000"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/green"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lelang"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/poppins_medium"/>
+                    <TextView
+                        android:id="@+id/tv_tanggal_pembayaran"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/2/21"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bukti Pembayaran"
+                        android:textSize="10sp"
+                        android:fontFamily="@font/poppins_medium"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_status_pembayaran_admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dibayarkan"
+                            android:textSize="10sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ln_detail_transfer_admin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/back_hijau"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_detail_transfer_admin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Detail Transfer"
+                            android:textColor="@color/white"
+                            android:textSize="9sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

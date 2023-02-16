@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pelelang.fragmentui.lelang.LelangPelelangFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Katalog Lelang"
+                android:textColor="@color/green"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="41dp"
+                android:layout_gravity="end"
+                android:src="@drawable/foto_profile" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <Button
+            android:id="@+id/btnAddLelang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_button_green"
+            android:fontFamily="@font/poppins_medium"
+            android:text=" + Tambah Lelang"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/et_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:queryHint="@string/Search"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/searchview_bg"
+            android:queryBackground="@android:color/transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_product_terbaru"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_katalog_lelang" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

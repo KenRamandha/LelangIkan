@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".panitia.activity.VerifikasiPanitiaActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_kembali_penawaran_calon_pemenang"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:textColor="@color/black"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text=" List Penawaran Lelang"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Lelang :"
+                android:textColor="@color/green"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="10dp"
+                android:textSize="12sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp">
+                    <TextView
+                        android:id="@+id/tv_produk_penawaran_calon_pemenang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Ikan Bawal 50Kg"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_pemenang_lelang"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pemenang Lelang :"
+                android:textColor="@color/green"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="10dp"
+                android:textSize="12sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp">
+                    <TextView
+                        android:id="@+id/tv_peserta_calon_pemenang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_idpeserta_calon_pemenang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btn_pemenang1_calon_panitia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Jadikan Pemenang"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="10sp"
+        android:visibility="gone"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ln_pemenang_lelang_panitia">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_penawaran_calon_pemenang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_penawaran_calon_panitia">
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

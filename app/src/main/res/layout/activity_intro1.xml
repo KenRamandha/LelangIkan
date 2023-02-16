@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="339dp"
+            android:layout_height="204dp"
+            android:src="@drawable/logo_splash2" />
+        <LinearLayout
+            android:id="@+id/pertama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo_new"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cabin_medium"
+                    android:text="BID"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/kedua1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Tulis Budget kamu untuk ikan yang sedang di incar"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Apabila ada orang lain melakukan BID, MaLang akan melakukan bid sesuai kelipatan minimum supaya anda tidak Rugi"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Duduk santai dan dapat melanjutkan aktivitas"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50dp"
+            android:paddingRight="10dp"
+            android:gravity="right">
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

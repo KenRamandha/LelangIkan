@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp"
+    android:background="@drawable/back_daftar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/tv_nama_konfirmasi_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Pelelang satu"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/ln_detail_konfirmasi_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/back_hijau"
+                android:clickable="true"
+                android:padding="5dp">
+
+                <TextView
+                    android:clickable="true"
+                    android:id="@+id/tv_detail_konfirmasi_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Detail Lelang"
+                    android:textColor="@color/white"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="judul">
+        <item>Ikan Lele Jumbo</item>
+        <item>Ikan Lele Mini</item>
+        <item>Ikan Lele gaktau</item>
+    </string-array>
+    <string-array name="text">
+        <item>Nelayan Yere </item>
+        <item>Nelayan Yere </item>
+        <item>Nelayan Yere  </item>
+    </string-array>
+
+    <string-array name="PilihStatus">
+        <item>Pesanan Telah Diterima</item>
+        <item>Pesanan Sedang Diantar</item>
+        <item>Pesanan Dalam Pengemasan</item>
+    </string-array>
+
+    <string-array name="Jusaha">
+        <item>Perorangan</item>
+        <item>Perusahaan</item>
+        <item>Koperasi</item>
+    </string-array>
+
+    <string-array name="PilihPengguna">
+        <item>Peserta</item>
+        <item>Pelelang</item>
+    </string-array>
+
+    <string-array name="PilihStatusPemesanan">
+        <item>Belum di Proses</item>
+        <item>Sedang di Proses</item>
+        <item>Sedang di Proses</item>
+    </string-array>
+
+    <string-array name="Jkel">
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="status_surat">
+        <item>Belum di Proses</item>
+        <item>Dalam Pengiriman</item>
+        <item>Telah Sampai</item>
+    </string-array>
+
+    <string-array name="Jenis">
+        <item>Perusahaan</item>
+        <item>Perorangan</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="SttsPngiriman">
+        <item> </item>
+        <item>Sedang di Proses</item>
+        <item>Sedang dalam Pengiriman</item>
+        <item>Barang telah Sampai</item>
+    </string-array>
+</resources>

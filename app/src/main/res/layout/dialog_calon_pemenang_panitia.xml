@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="20dp">
+        <ImageButton
+            android:id="@+id/btn_back_dialog_calon_panitia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:background="@color/transparant"
+            android:layout_margin="20dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Penawaran Lelang"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_semibold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Nama"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_calon_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Budi Utomo"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Peserta ID"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_pesertaId_calon_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jl. Legian No.3, Bali"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:text="Penawaran harga"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text=":"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/tv_harga_calon_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="081234567892"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/black"
+                        android:layout_margin="5dp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_pemenang_calon_panitia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@color/green"
+                android:text="Konfirmasi"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/background_button_green"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

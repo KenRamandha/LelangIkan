@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="E-Lelang Ikan"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31"
+        android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".intro.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".intro.IntroActivity" />
+        <activity android:name=".peserta.activity.MainActivity" />
+        <activity android:name=".intro.LoginActivity" />
+        <activity android:name=".peserta.activity.DetailLelangActivity" />
+        <activity android:name=".peserta.activity.DaftarMenangActivity" />
+        <activity android:name=".peserta.activity.TestimoniActivity" />
+        <activity android:name=".peserta.activity.EditAkunActivity" />
+        <activity android:name=".peserta.activity.MetodBayarActivity" />
+        <activity android:name=".peserta.activity.TopUpActivity" />
+        <activity android:name=".peserta.activity.PengirimanActivity" />
+        <activity android:name=".peserta.activity.BidActivity" />
+        <activity android:name=".intro.PeranActivity" />
+        <activity android:name=".intro.DaftarAkunActivity" />
+        <activity android:name=".peserta.activity.PesertaTransaksiActivity" />
+        <activity android:name=".peserta.activity.KonfirmasiProdukActivity" />
+        <activity android:name=".peserta.activity.BayarPemenangActivity" />
+        <activity android:name=".peserta.activity.BayarSekarangActivity" />
+        <activity android:name=".peserta.activity.DetailTransaksiPembayaranActivity" />
+        <activity android:name=".peserta.activity.DetailTransaksiRiwayatActivity" />
+        <activity android:name=".peserta.activity.PemenangPengirimanPesertaActivity" />
+
+        <activity android:name=".admin.activity.AdminActivity" />
+        <activity android:name=".admin.activity.PemenangActivity" />
+        <activity android:name=".admin.activity.PembayaranActivity" />
+        <activity android:name=".admin.activity.LelangActivity" />
+        <activity android:name=".admin.activity.RiwayatLelangActivity" />
+        <activity android:name=".admin.activity.PembayaranHasilLelangActivity" />
+        <activity android:name=".admin.activity.PengemasanActivity" />
+        <activity android:name=".admin.activity.PeranAdminActivity" />
+        <activity android:name=".admin.activity.DetailPelelangActivity" />
+        <activity android:name=".admin.activity.DetailPesertaActivity" />
+        <activity android:name=".admin.activity.DetailKonfirmasiAdminActivity" />
+        <activity android:name=".admin.activity.AdminAkunActivity" />
+        <activity android:name=".admin.activity.AdminDetailLelangActivity" />
+        <activity android:name=".admin.activity.KonfirmasiAdminActivity" />
+        <activity android:name=".admin.activity.DetailPanitiaActivity" />
+        <activity android:name=".admin.activity.DetailPembayaranPanitia" />
+        <activity android:name=".admin.activity.DetailPembayaran" />
+        <activity android:name=".admin.activity.AdminPenawaranLelangActivity" />
+        <activity android:name=".admin.activity.DepositLelangActivity" />
+        <activity android:name=".admin.activity.DetailPembayaranDeposit" />
+
+        <activity
+            android:name=".pelelang.hostui.PdfActivity"
+            android:exported="false" />
+        <activity android:name=".pelelang.hostui.DetailProdukActivity" />
+        <activity android:name=".pelelang.hostui.EditProdukActivity" />
+        <activity android:name=".pelelang.hostui.transaksidetail.DetailTransaksi" />
+        <activity android:name=".pelelang.hostui.transaksidetail.ProsesTransaksiMainActivity" />
+        <activity android:name=".pelelang.hostui.DetailPengirimanPelelang" />
+        <activity android:name=".pelelang.hostui.DetailPesananPelelang" />
+        <activity android:name=".pelelang.hostui.DetailLelangPelelang" />
+        <activity android:name=".pelelang.hostui.EditAkunPelelang" />
+        <activity android:name=".pelelang.hostui.PelelangActivity" />
+        <activity android:name=".pelelang.hostui.PengirimanPelelangActivity" />
+        <activity android:name=".pelelang.hostui.Pesanan_Pelelang" />
+        <activity android:name=".pelelang.hostui.TambahLelangActivity" />
+        <activity android:name=".pelelang.hostui.AkunPelelangActivity" />
+        <activity android:name=".pelelang.hostui.PembayaranPelelangActivity" />
+        <activity android:name=".pelelang.hostui.RiwayatPemenangActivity" />
+        <activity android:name=".pelelang.hostui.Activity_Penilaian_Lelang"/>
+
+
+        <activity android:name=".panitia.activity.TestimoniPanitiaActivity" />
+        <activity android:name=".panitia.activity.ActivityEditAkunPanitia" />
+        <activity android:name=".panitia.activity.AkunPanitiaActivity" />
+        <activity android:name=".panitia.activity.PanitiaActivity" />
+        <activity android:name=".panitia.activity.PembayaranSaldoPanitiaActivity" />
+        <activity android:name=".panitia.activity.PengemasanPanitiaActivity" />
+        <activity android:name=".panitia.activity.StatusPanitiaActivity" />
+        <activity android:name=".panitia.activity.StatusPemenangPanitiaActivity" />
+        <activity android:name=".panitia.activity.SuratPanitiaActivity" />
+        <activity android:name=".panitia.activity.VerifikasiPanitiaActivity" />
+        <activity android:name=".panitia.activity.DetailVerifPanitiaActivity" />
+        <activity android:name=".panitia.activity.DetailPesertaPanitiaActivity" />
+        <activity android:name=".panitia.activity.DetailPelelangPanitiaActivity" />
+        <activity android:name=".panitia.activity.ActivityDetailSuratPengirimanPanitia" />
+        <activity android:name=".panitia.activity.DetailPemenangPanitiaActivity" />
+        <activity android:name=".panitia.activity.DetailSuratPerintahPanitiaActivity" />
+        <activity android:name=".panitia.activity.CalonPemenangPanitiaActivity"/>
+        <activity android:name=".panitia.activity.ListPenawaranPanitiaActivity"/>
+        <activity android:name=".panitia.activity.KirimSaldoPanitiaActivity"/>
+        <activity android:name=".panitia.activity.RiwayatPanitiaActivity"/>
+        <activity android:name=".panitia.activity.RiwayatLelangPanitiaActivity"/>
+        <activity android:name=".panitia.activity.EditAkunPanitiaActivity"/>
+        <activity android:name=".panitia.activity.SuratPerintahPengiriman"/>
+        <activity android:name=".panitia.activity.PembayaranPesertaPanitiaActivity"/>
+        <activity android:name=".panitia.activity.DetailDepositPesertaPanitiaActivity"/>
+        <activity android:name=".panitia.activity.DetailPembayaranPesertaPanitiaActivity"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapplication.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

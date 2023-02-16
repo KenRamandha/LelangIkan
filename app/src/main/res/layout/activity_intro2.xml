@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="349dp"
+            android:layout_height="253dp"
+            android:src="@drawable/logo_splash3" />
+        <LinearLayout
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_new"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:text="Deposit"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Untuk Menghindari bid dan run mewajibkan Bidder deposit sebelum melakukan BID"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Apabila kamu menang lelang, kamu wajib bayar sisa tagihan dalam waktu 1x24 jam"/>
+            <TextView
+                android:paddingTop="5dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Kalau lewat dari itu terpaksa deposit kamu akan Lelang Ikan kasih ke penjual"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

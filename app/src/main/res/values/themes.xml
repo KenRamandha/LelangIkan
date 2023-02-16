@@ -1,0 +1,81 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#005B5C</item>
+        <item name="colorPrimaryVariant">#005B5C</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#F8B400</item>
+        <item name="colorSecondaryVariant">#CC9310</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Widget.AppTheme.TextInputLayoutList" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextAppearance">@style/Widget.AppTheme.TextInputLayoutList</item>
+        <item name="boxStrokeColor">@color/kuning</item>
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+    <style name="EditTextGeneral">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingStart">16sp</item>
+        <item name="android:paddingEnd">16sp</item>
+    </style>
+    <style name="EditTextStatus">
+        <item name="android:minHeight">30dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:paddingStart">16sp</item>
+        <item name="android:paddingEnd">16sp</item>
+    </style>
+    <style name="EditTextEdit">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="PoppinsMediumFont">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="PoppinsLightFont">
+        <item name="android:fontFamily">@font/poppins_light</item>
+    </style>
+
+    <style name="PoppinsRegulerFont">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="PoppinsSemiBoldFont">
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="EditTextAkunPelelang">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="EditTextAkun">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+
+    <style name="buttontmbhFtot">
+        <item name="android:textSize">7sp</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">@color/green</item>
+    </style>
+</resources>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pelelang.hostui.DetailLelangPelelang">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_back_DetailPesananPelelang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparant"
+            android:contentDescription="@string/Pesanan"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagelist1"
+                            android:layout_width="358dp"
+                            android:layout_height="250dp"
+                            android:contentDescription="@string/nma_Ikan"
+                            android:onClick="handleSelection"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ikan" />
+
+                        <ImageView
+                            android:id="@+id/imagelist2"
+                            android:layout_width="358dp"
+                            android:layout_height="250dp"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/nma_Ikan"
+                            android:onClick="handleSelection"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toEndOf="@+id/imagelist1"
+                            app:layout_constraintTop_toTopOf="@+id/imagelist1"
+                            app:srcCompat="@drawable/ikan" />
+
+                        <ImageView
+                            android:id="@+id/imagelist3"
+                            android:layout_width="358dp"
+                            android:layout_height="250dp"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/nma_Ikan"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toEndOf="@+id/imagelist2"
+                            app:layout_constraintTop_toTopOf="@+id/imagelist2"
+                            app:srcCompat="@drawable/ikan" />
+
+                        <ImageView
+                            android:id="@+id/imagelist4"
+                            android:layout_width="358dp"
+                            android:layout_height="250dp"
+                            android:layout_marginStart="8dp"
+                            android:contentDescription="@string/nma_Ikan"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintStart_toEndOf="@+id/imagelist3"
+                            app:layout_constraintTop_toTopOf="@+id/imagelist3"
+                            app:srcCompat="@drawable/ikan" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-40dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/before_vec" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/next_vec"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/back_detail"
+                android:elevation="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Start Bid"
+                        android:textSize="9dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Rp. "
+                            android:textColor="@color/green"
+                            android:textSize="9sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="100. 000"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="60dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Sisa Waktu Lelang"
+                        android:textSize="9dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:src="@drawable/ic_baseline_timer_24" />
+
+                        <TextView
+                            android:id="@+id/tv_jam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingLeft="5dp"
+                            android:text="00"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:text=":"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_menit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:text="00"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:text=":"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+
+                        <TextView
+                            android:id="@+id/tv_detik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="0dp"
+                            android:text="00"
+                            android:textColor="@color/green"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:paddingTop="-90dp">
+
+                <TextView
+                    android:id="@+id/judul_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Ikan Bawal"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/detail_lelang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingTop="10dp"
+                    android:text="Ikan bawal 100kg berlokasi di Pati"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BliSkrng"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        style="@style/PoppinsSemiBoldFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/HargPenawaran"
+                        android:textColor="@color/green"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabsPesnanPelelang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Peraturan" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Penilaian" />
+
+                </com.google.android.material.tabs.TabLayout>
+            </LinearLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_pager_detailPesananPlelang"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+            </androidx.core.widget.NestedScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_EditDLelang"
+                    android:layout_width="203dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_button_green"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/EditLelang"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_HpusDLelang"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:radius="20dp"
+                    android:text="@string/HapusDLelang"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

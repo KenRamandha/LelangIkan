@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TmbahPelelangan"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_back_detail_panitia"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="20dp"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Verifikasi Produk Lelang"
+                    android:textColor="@color/green"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_gambar1_detail_panitia"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/imgup" />
+
+                    <ImageView
+                        android:id="@+id/iv_gambar2_detail_panitia"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:layout_marginStart="8dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_gambar3_detail_panitia"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:layout_marginStart="8dp"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/iv_gambar4_detail_panitia"
+                        android:layout_width="358dp"
+                        android:layout_height="320dp"
+                        android:layout_marginStart="8dp"
+                        android:scaleType="centerCrop" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nmeproduk"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/transparant"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/DeskProduk"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_desk_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Jumlah"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_jumlah_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Penawaran"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hrgawal_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/HrgMinimAccept"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hrgmin_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/HrgIncrement"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_kelipatan_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/BliSkrng"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_beliskg_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tglMulaiLelang"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tglmulai_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tglEndLelang"
+                        android:layout_marginStart="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        style="@style/PoppinsMediumFont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/titik2"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tglselesai_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/keterangan"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/back_lelang">
+
+                    <TextView
+                        android:id="@+id/tv_keterangan_detail_panitia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:text="1231321321"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_verif_lelang_panitia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_button_green"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Verifikasi"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_tolak_lelang_panitia"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:radius="20dp"
+                        android:text="Tolak"
+                        android:textAllCaps="false"
+                        android:textColor="@color/green" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

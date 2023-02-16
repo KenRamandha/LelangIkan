@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="299dp"
+            android:layout_height="277dp"
+            android:src="@drawable/logo_splash4" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_new"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:text="Packging"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:paddingTop="30dp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/green"
+                android:text="● Kamu bisa memilih pengiriman menggunakan bus / kereta atau jasa jasper door to door sehingga tidak perlu repot untuk mengambil ke lelang"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

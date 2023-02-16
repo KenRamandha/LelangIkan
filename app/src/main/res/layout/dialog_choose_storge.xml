@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".dialog.ChooseStorgeDialogFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gallery"
+        android:id="@+id/bt_gallery"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="textStart"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Penyimpanan"
+        android:id="@+id/bt_storage"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAlignment="textStart"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="@color/white"/>
+
+</LinearLayout>
